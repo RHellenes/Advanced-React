@@ -23,6 +23,9 @@ const GlobalStyles = createGlobalStyle`
     --maxWidth: 1000px;
     --bs: 0 12px 24px 0 rgba(0,0,0,0.09);
   }
+  html{
+    font-size: 62.5%;
+  }
   *,
   *::before,
   *::after{
@@ -56,7 +59,6 @@ export const Page = ({ children }) => (
   <div className="">
     <GlobalStyles />
     <Header />
-    <nav>Nav</nav>
     <InnerStyles>{children}</InnerStyles>
     <footer>footer</footer>
   </div>
